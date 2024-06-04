@@ -648,5 +648,12 @@ body {
   .social {
     flex-wrap: nowrap;
     width: 144px;
+    margin-top: 10px;
+  }
+  .footer-container ul {
+    max-width: 220px;
+  }
+  .number{
+    margin-top: 10px;
   }
 }
