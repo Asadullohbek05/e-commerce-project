@@ -25,15 +25,16 @@
         </div>
         <div class="menu">
           <div class="menu-links">
-            <a href="#">
+            <a class="favouriteEl" href="pages/favourite.html">
               <img src="images/svg/heart-icon.svg" alt="" />
               Избранное
+              <span>0</span>
             </a>
             <a href="#">
               <img src="images/svg/products-icon.svg" alt="" />
               продукты
             </a>
-            <a href="#">
+            <a href="pages/cart.html">
               <img src="images/svg/shopping-cart-icon.svg" alt="" />
               Корзина
             </a>
@@ -53,9 +54,10 @@
           </button>
         </li>
         <li>
-          <a href="#">
+          <a class="favouriteEl" href="#">
             <img src="images/svg/heart-icon.svg" alt="" />
             Избранное
+            <span>0</span>
           </a>
         </li>
         <li>
@@ -89,6 +91,12 @@
 
     <!-- Main start -->
     <main class="main container">
+      <div class="all-products">
+        <div class="all-products-top">
+          <h1>Все продукты</h1>
+        </div>
+        <div class="all-products-cards"></div>
+      </div>
       <section class="special-offers">
         <h2>Специальные предложения</h2>
         <div class="special-offers-cards">
@@ -216,5 +224,10 @@
       </div>
     </footer>
     <!-- Footer End -->
+    <script src="js/products-data.js"></script>
+    <script src="js/const.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/products.js"></script>
   </body>
 </html>
