@@ -892,4 +892,10 @@ body {
   .number {
     margin-top: 10px;
   }
+  .all-products-cards {
+    gap: 16px;
+  }
+  .product-card {
+    max-width: 150px;
+  }
 }
