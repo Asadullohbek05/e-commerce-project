@@ -5,17 +5,17 @@ function getRating(rating) {
     let rest_star = rating - full_star;
 
     star_count = full_star;
-    res = Array(full_star).fill('<img src="images/svg/star-full.svg" alt="" />').join("");
+    res = Array(full_star).fill('<img src="../images/svg/star-full.svg" alt="" />').join("");
     if (0.25 <= rest_star && rest_star <= 0.5) {
         star_count++;
-        res += '<img src="images/svg/star-half.svg" alt="" />'
+        res += '<img src="../images/svg/star-half.svg" alt="" />'
     }
     if (0.5 < rest_star) {
         star_count++;
-        res += '<img src="images/svg/star-full.svg" alt="" />'
+        res += '<img src="../images/svg/star-full.svg" alt="" />'
     }
     free_star = 5 - star_count;
-    res += Array(free_star).fill('<img src="images/svg/star.svg" alt="" />').join("");
+    res += Array(free_star).fill('<img src="../images/svg/star.svg" alt="" />').join("");
     return res;
 }
 
@@ -34,14 +34,14 @@ function getProductCard({
             '<img src="../images/svg/heart-icon.svg" alt="">'}         
               </button >
             </div >
-            <h4>${name} - ${price} ₽ <span class="discount">${discount}%</span></h4>
-            <div class="description-wrapper">
-                <p>${description}</p>
+            <div class="product-card-body">
+                <h4>${name.slice(0, 10)} - ${price} ₽ <span class="discount">-${discount}%</span></h4>
+                <p>${description.slice(0, 48)} ...</p>
                 <div class="stars-wrapper">
                     ${getRating(rating)}
                 </div>
+                <button class="addToCart">В корзину</button>
             </div>
-            <button class="addToCart">В корзину</button>
         </div >
     `
 }

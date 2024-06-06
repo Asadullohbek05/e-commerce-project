@@ -3,12 +3,12 @@ const products = [
         id: 1,
         name: "Apple",
         category: "Fruit",
-        description: "A round fruit with a red, green, or yellow ",
+        description: "A round fruit with a red, green, or yellow and purple",
         price: 89,
         rating: 5,
         discount: 0,
         images: [
-            "../images/products/1.png",
+            "../images/products/17.png",
             "../images/products/2.png",
             "../images/products/3.png",
             "../images/products/4.png",
@@ -24,7 +24,7 @@ const products = [
         rating: 5,
         discount: 20,
         images: [
-            "../images/products/2.png",
+            "../images/products/22.png",
             "../images/products/3.png",
             "../images/products/4.png",
             "../images/products/5.png",
@@ -40,7 +40,7 @@ const products = [
         rating: 5,
         discount: 20,
         images: [
-            "../images/products/3.png",
+            "../images/products/18.png",
             "../images/products/4.png",
             "../images/products/5.png",
             "../images/products/6.png",
@@ -88,7 +88,7 @@ const products = [
         rating: 3.5,
         discount: 50,
         images: [
-            "../images/products/6.png",
+            "../images/products/10.png",
             "../images/products/7.png",
             "../images/products/8.png",
             "../images/products/9.png",
@@ -120,7 +120,7 @@ const products = [
         rating: 4.5,
         discount: 20,
         images: [
-            "../images/products/8.png",
+            "../images/products/32.png",
             "../images/products/9.png",
             "../images/products/10.png",
             "../images/products/11.png",
